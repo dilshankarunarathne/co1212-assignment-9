@@ -5,4 +5,4 @@ Implement a java program using queue to check if an expression is balanced or no
 ## My algorithm
 
 * For each character in the expression:
-  * 
+  * If it's a bracket -> enqueue to the queue
