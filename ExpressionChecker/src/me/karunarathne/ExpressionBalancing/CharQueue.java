@@ -40,6 +40,10 @@ public class CharQueue {
         size ++ ;
     }
 
+    public void clear() {
+        
+    }
+
     public boolean isEmpty() {
         return size == 0;
     }

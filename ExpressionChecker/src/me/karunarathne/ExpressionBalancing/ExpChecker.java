@@ -6,10 +6,10 @@ public class ExpChecker {
 
     static {
         queue = new CharQueue();
-        count = 0;
     }
 
     public static boolean checkBalance (String exp) {
+        clearAll();
         for (char c: exp.toCharArray()) {
             if (exp.isEmpty()) return false;
 //            if (isAnOpeningBracket(c)) {
@@ -29,6 +29,11 @@ public class ExpChecker {
         return isTheQueueAPalindrome();
     }
 
+    private static void clearAll() {
+        count = 0;
+        queue.clear();
+    }
+
     private static boolean isTheQueueAPalindrome()  {
         if (count % 2 == 1) return false;
         String half = "";
@@ -44,12 +49,9 @@ public class ExpChecker {
     }
 
     private static boolean compatibleBrackets(char opening, char closing) {
-        if (
-                (opening == '(' && closing == ')') ||
+        return (opening == '(' && closing == ')') ||
                 (opening == '{' && closing == '}') ||
-                (opening == '[' && closing == ']')) {
-    
-        }
+                (opening == '[' && closing == ']');
     }
 
     private static boolean isEmpty() {
