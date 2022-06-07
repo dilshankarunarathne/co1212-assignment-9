@@ -21,8 +21,14 @@ public class ExpChecker {
             if (expression.isEmpty()) return false;
             if (isAnOpeningBracket(c)) {
                 queue.enqueue(c);
+            } else if (isAClosingBracket(c)) {
+
             }
         }
+    }
+
+    private static boolean isAClosingBracket (char c) {
+        return c == ')' || c == '}' || c == ']';
     }
 
     private static boolean isAnOpeningBracket (char c) {
