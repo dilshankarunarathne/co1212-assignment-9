@@ -36,11 +36,15 @@ public class ExpChecker {
             reverseHalf = queue.dequeue() + reverseHalf;
         }
         for (int i=0; i<count/2; i++) {
-            if (reverseHalf.charAt(i) != queue.dequeue()) {
+            if (compatibleBrackets(reverseHalf.charAt(i), queue.dequeue())) {
                 return false;
             }
         }
         return true;
+    }
+
+    private static boolean compatibleBrackets(char opening, char closing) {
+
     }
 
     private static boolean isEmpty() {
