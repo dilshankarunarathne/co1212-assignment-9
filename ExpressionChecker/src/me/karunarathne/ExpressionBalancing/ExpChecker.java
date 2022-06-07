@@ -25,8 +25,24 @@ public class ExpChecker {
 //                if (isEmpty()) return false;
 //
 //            }
-            
+
         }
+    }
+
+    private static boolean checkIfPalindrome() {
+        String slice;
+        if (strLen % 2 == 1) {  // odd
+            slice = inputString.substring((strLen/2)+1, strLen);
+        } else {                // even
+            slice = inputString.substring(strLen/2, strLen);
+        }
+
+        for (int i=slice.length()-1; i>=0; i--) {
+            if (slice.charAt(i) != queue.dequeue()) {
+                return false;
+            }
+        }
+        return true;
     }
 
     private static boolean isEmpty() {
