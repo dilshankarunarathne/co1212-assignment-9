@@ -17,3 +17,4 @@ Implement a java program using queue to check if an expression is balanced or no
     * Dequeue elements and add it to the front of half
   * For the rest of the traverse:
     * Check whether each element (should be a closing bracket) of the queue matches the corresponding opening bracket from the character at i<sup>th</sup> place in half
+
