@@ -13,10 +13,6 @@ public class ExpChecker {
         expression = exp;
         expLength = exp.length();
 
-        return isBalanced();
-    }
-
-    private static boolean isBalanced () {
         for (char c: expression.toCharArray()) {
             if (expression.isEmpty()) return false;
             if (isAnOpeningBracket(c)) {
