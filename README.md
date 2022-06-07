@@ -12,5 +12,8 @@ Implement a java program using queue to check if an expression is balanced or no
     * Increment the count
   * Otherwise -> do nothing
 * For each element in the queue:
+  * String half
   * Halfway through the traverse:
+    * Dequeue elements and add it to the front of half
+  * For the rest of the traverse:
     * 
