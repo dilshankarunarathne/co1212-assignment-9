@@ -45,7 +45,7 @@ public class ExpChecker {
                 (opening == '[' && closing == ']');
     }
 
-    private static boolean isAClosingBracket (char c) {
+    private static boolean isABracket(char c) {
         return c == ')' || c == '}' || c == ']' || c == '(' || c == '{' || c == '[';
     }
 }
