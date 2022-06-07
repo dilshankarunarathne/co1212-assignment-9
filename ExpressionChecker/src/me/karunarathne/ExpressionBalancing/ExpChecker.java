@@ -31,10 +31,10 @@ public class ExpChecker {
 
     private static boolean checkIfPalindrome() {
         String slice;
-        if (strLen % 2 == 1) {  // odd
-            slice = inputString.substring((strLen/2)+1, strLen);
+        if (expLength % 2 == 1) {  // odd
+            slice = inputString.substring((expLength/2)+1, expLength);
         } else {                // even
-            slice = inputString.substring(strLen/2, strLen);
+            slice = inputString.substring(expLength/2, expLength);
         }
 
         for (int i=slice.length()-1; i>=0; i--) {
