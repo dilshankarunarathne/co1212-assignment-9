@@ -41,7 +41,7 @@ public class ExpChecker {
             half = queue.dequeue() + half;
         }
         for (int i=0; i<count/2; i++) {
-            if (compatibleBrackets(half.charAt(i), queue.dequeue())) {
+            if (!compatibleBrackets(half.charAt(i), queue.dequeue())) {
                 return false;
             }
         }
@@ -49,7 +49,6 @@ public class ExpChecker {
     }
 
     private static boolean compatibleBrackets(char opening, char closing) {
-        System.out.println(opening + " - " + closing);
         return (opening == '(' && closing == ')') ||
                 (opening == '{' && closing == '}') ||
                 (opening == '[' && closing == ']');
