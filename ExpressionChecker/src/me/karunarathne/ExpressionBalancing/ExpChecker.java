@@ -12,7 +12,7 @@ public class ExpChecker {
         clearAll();
         for (char c: exp.toCharArray()) {
             if (exp.isEmpty()) return false;
-            if (isAnOpeningBracket(c) || isAClosingBracket(c)) {
+            if (isABracket(c)) {
                 queue.enqueue(c);
                 count++;
             }
@@ -46,10 +46,6 @@ public class ExpChecker {
     }
 
     private static boolean isAClosingBracket (char c) {
-        return c == ')' || c == '}' || c == ']';
-    }
-
-    private static boolean isAnOpeningBracket (char c) {
-        return c == '(' || c == '{' || c == '[';
+        return c == ')' || c == '}' || c == ']' || c == '(' || c == '{' || c == '[';
     }
 }
