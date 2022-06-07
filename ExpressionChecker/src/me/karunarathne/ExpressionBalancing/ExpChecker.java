@@ -44,7 +44,12 @@ public class ExpChecker {
     }
 
     private static boolean compatibleBrackets(char opening, char closing) {
-
+        if (
+                (opening == '(' && closing == ')') ||
+                (opening == '{' && closing == '}') ||
+                (opening == '[' && closing == ']')) {
+    
+        }
     }
 
     private static boolean isEmpty() {
