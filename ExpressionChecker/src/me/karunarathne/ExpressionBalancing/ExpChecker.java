@@ -29,7 +29,7 @@ public class ExpChecker {
         if (count % 2 == 1) return false;
         String half = "";
         for (int i=0; i<count/2; i++) {
-            half = queue.dequeue() + half;
+            half = queue.dequeue() + half;      // Be basic and not use a StringBuilder
         }
         for (int i=0; i<count/2; i++) {
             if (!compatibleBrackets(half.charAt(i), queue.dequeue())) {
