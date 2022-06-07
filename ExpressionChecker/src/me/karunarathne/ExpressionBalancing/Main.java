@@ -19,7 +19,10 @@ public class Main {
 
     private static void checkExp(String expression) {
         System.out.println(
-                (ExpChecker.checkBalance(expression)) ? ("") : ("")
+                expression + (
+                    (ExpChecker.checkBalance(expression)) ?
+                        (" ") : (" is not"))
+                + " balanced!"
         );
     }
 }
