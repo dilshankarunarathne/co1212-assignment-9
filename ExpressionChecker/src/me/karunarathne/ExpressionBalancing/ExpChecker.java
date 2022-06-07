@@ -45,10 +45,6 @@ public class ExpChecker {
                 (opening == '[' && closing == ']');
     }
 
-    private static boolean isEmpty() {
-        return queue.isEmpty();
-    }
-
     private static boolean isAClosingBracket (char c) {
         return c == ')' || c == '}' || c == ']';
     }
