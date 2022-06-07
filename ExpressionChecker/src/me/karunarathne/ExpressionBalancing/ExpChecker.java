@@ -11,7 +11,7 @@ public class ExpChecker {
     public static boolean checkBalance (String exp) {
         clearAll();
         for (char c: exp.toCharArray()) {
-            if (exp.isEmpty()) return false;
+            if (exp.isBlank()) return false;
             if (isABracket(c)) {
                 queue.enqueue(c);
                 count++;
