@@ -10,3 +10,5 @@ Implement a java program using queue to check if an expression is balanced or no
   * If it's a bracket -> 
     * Enqueue to the queue
     * Increment the count
+  * Otherwise -> do nothing
+* 
