@@ -2,3 +2,5 @@
 
 Implement a java program using queue to check if an expression is balanced or not.
 
+## My algorithm
+
