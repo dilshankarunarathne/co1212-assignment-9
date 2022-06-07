@@ -12,9 +12,19 @@ public class ExpChecker {
     public static boolean checkBalance (String exp) {
         expression = exp;
         expLength = exp.length();
+
+        return isBalanced();
     }
 
     private static boolean isBalanced () {
+        for (char c: expression.toCharArray()) {
+            if (isAnOpeningBracket(c)) {
+                
+            }
+        }
+    }
+
+    private static boolean isAnOpeningBracket (char c) {
 
     }
 }
