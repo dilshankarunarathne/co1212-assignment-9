@@ -23,7 +23,7 @@ public class ExpChecker {
                 queue.enqueue(c);
             } else if (isAClosingBracket(c)) {
                 if (isEmpty()) return false;
-
+                queue.enqueue(c);
             }
 
         }
