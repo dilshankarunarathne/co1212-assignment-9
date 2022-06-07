@@ -2,9 +2,11 @@ package me.karunarathne.ExpressionBalancing;
 
 public class ExpChecker {
     private static CharQueue queue;
+    private static int count;
 
     static {
         queue = new CharQueue();
+        count = 0;
     }
 
     public static boolean checkBalance (String exp) {
@@ -14,9 +16,11 @@ public class ExpChecker {
             if (exp.isEmpty()) return false;
             if (isAnOpeningBracket(c)) {
                 queue.enqueue(c);
+                count++;
             } else if (isAClosingBracket(c)) {
                 if (isEmpty()) return false;
                 queue.enqueue(c);
+                count++;
             }
         }
         return isTheQueueAPalindrome();
