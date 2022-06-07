@@ -49,6 +49,7 @@ public class ExpChecker {
     }
 
     private static boolean compatibleBrackets(char opening, char closing) {
+        System.out.println(opening + " - " + closing);
         return (opening == '(' && closing == ')') ||
                 (opening == '{' && closing == '}') ||
                 (opening == '[' && closing == ']');
