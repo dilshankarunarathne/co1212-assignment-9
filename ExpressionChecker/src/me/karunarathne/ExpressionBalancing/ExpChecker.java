@@ -29,22 +29,6 @@ public class ExpChecker {
 
     }
 
-    private static boolean checkIfPalindrome() {
-        String slice;
-        if (expLength % 2 == 1) {  // odd
-            slice = expression.substring((expLength/2)+1, expLength);
-        } else {                // even
-            slice = expression.substring(expLength/2, expLength);
-        }
-
-        for (int i=slice.length()-1; i>=0; i--) {
-            if (slice.charAt(i) != queue.dequeue()) {
-                return false;
-            }
-        }
-        return true;
-    }
-
     private static boolean isEmpty() {
         return queue.isEmpty();
     }
