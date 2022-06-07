@@ -18,6 +18,8 @@ public class Main {
     }
 
     private static void checkExp(String expression) {
-
+        System.out.println(
+                (ExpChecker.checkBalance(expression)) ? ("") : ("")
+        );
     }
 }
