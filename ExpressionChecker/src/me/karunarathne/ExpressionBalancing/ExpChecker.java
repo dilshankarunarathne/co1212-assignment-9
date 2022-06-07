@@ -23,12 +23,15 @@ public class ExpChecker {
                 count++;
             }
         }
+        if (count % 2 == 1) return false;
         return isTheQueueAPalindrome();
     }
 
     private static boolean isTheQueueAPalindrome()  {
         String reverseHalf = "";
+        for (int i=0; i<count/2; i++) {
 
+        }
     }
 
     private static boolean isEmpty() {
