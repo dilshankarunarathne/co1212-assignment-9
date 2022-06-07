@@ -2,19 +2,16 @@ package me.karunarathne.ExpressionBalancing;
 
 public class ExpChecker {
     private static CharQueue queue;
-    private static String expression;
-    private static int expLength;
 
     static {
         queue = new CharQueue();
     }
 
     public static boolean checkBalance (String exp) {
-        expression = exp;
-        expLength = exp.length();
+        int expLength = exp.length();
 
-        for (char c: expression.toCharArray()) {
-            if (expression.isEmpty()) return false;
+        for (char c: exp.toCharArray()) {
+            if (exp.isEmpty()) return false;
             if (isAnOpeningBracket(c)) {
                 queue.enqueue(c);
             } else if (isAClosingBracket(c)) {
@@ -26,6 +23,7 @@ public class ExpChecker {
     }
 
     private static boolean isTheQueueAPalindrome()  {
+        String reverseHalf = "";
 
     }
 
