@@ -16,4 +16,4 @@ Implement a java program using queue to check if an expression is balanced or no
   * Halfway through the traverse:
     * Dequeue elements and add it to the front of half
   * For the rest of the traverse:
-    * 
+    * Check whether each element of the queue matches the 
