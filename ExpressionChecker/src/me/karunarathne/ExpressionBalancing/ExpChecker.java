@@ -25,6 +25,6 @@ public class ExpChecker {
     }
 
     private static boolean isAnOpeningBracket (char c) {
-
+        return (c == '(' || c == '{' || c == '[') ? true : false;
     }
 }
