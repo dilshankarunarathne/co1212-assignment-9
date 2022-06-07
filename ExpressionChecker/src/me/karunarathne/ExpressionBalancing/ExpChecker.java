@@ -19,12 +19,12 @@ public class ExpChecker {
     private static boolean isBalanced () {
         for (char c: expression.toCharArray()) {
             if (isAnOpeningBracket(c)) {
-                
+
             }
         }
     }
 
     private static boolean isAnOpeningBracket (char c) {
-        return (c == '(' || c == '{' || c == '[') ? true : false;
+        return c == '(' || c == '{' || c == '[';
     }
 }
