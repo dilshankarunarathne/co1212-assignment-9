@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fcca217-4088-484d-9238-b1da1cec6eb8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/ExpressionChecker/src/me/karunarathne/ExpressionBalancing/ExpChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExpressionChecker/src/me/karunarathne/ExpressionBalancing/ExpChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +65,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1654565891545</updated>
-      <workItem from="1654565894943" duration="4730000" />
+      <workItem from="1654565894943" duration="5052000" />
     </task>
     <servers />
   </component>
@@ -82,16 +82,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ExpressionChecker/src/me/karunarathne/ExpressionBalancing/ExpChecker.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
