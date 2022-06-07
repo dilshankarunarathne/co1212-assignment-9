@@ -11,4 +11,5 @@ Implement a java program using queue to check if an expression is balanced or no
     * Enqueue to the queue
     * Increment the count
   * Otherwise -> do nothing
-* 
+* For each element in the queue:
+  * 
