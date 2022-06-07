@@ -10,8 +10,6 @@ public class ExpChecker {
     }
 
     public static boolean checkBalance (String exp) {
-        int expLength = exp.length();
-
         for (char c: exp.toCharArray()) {
             if (exp.isEmpty()) return false;
             if (isAnOpeningBracket(c)) {
@@ -23,15 +21,21 @@ public class ExpChecker {
                 count++;
             }
         }
-        if (count % 2 == 1) return false;
         return isTheQueueAPalindrome();
     }
 
     private static boolean isTheQueueAPalindrome()  {
+        if (count % 2 == 1) return false;
         String reverseHalf = "";
         for (int i=0; i<count/2; i++) {
-
+            reverseHalf = queue.dequeue() + reverseHalf;
         }
+        for (int i=0; i<count/2; i++) {
+            if (reverseHalf.charAt(i) != queue.dequeue()) {
+                return false;
+            }
+        }
+        return true;
     }
 
     private static boolean isEmpty() {
