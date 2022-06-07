@@ -1,7 +1,7 @@
 package me.karunarathne.ExpressionBalancing;
 
 public class ExpChecker {
-    private static CharQueue queue;
+    private static final CharQueue queue;
     private static int count;
 
     static {
