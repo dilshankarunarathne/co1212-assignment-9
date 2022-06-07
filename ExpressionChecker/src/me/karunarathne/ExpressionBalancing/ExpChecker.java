@@ -12,15 +12,6 @@ public class ExpChecker {
         clearAll();
         for (char c: exp.toCharArray()) {
             if (exp.isEmpty()) return false;
-//            if (isAnOpeningBracket(c)) {
-//                queue.enqueue(c);
-//                count++;
-//            } else if (isAClosingBracket(c)) {
-//                if (isEmpty()) return false;
-//                queue.enqueue(c);
-//                count++;
-//            }
-
             if (isAnOpeningBracket(c) || isAClosingBracket(c)) {
                 queue.enqueue(c);
                 count++;
