@@ -30,7 +30,7 @@ public class ExpChecker {
     }
 
     private static boolean isTheQueueAPalindrome()  {
-        
+
     }
 
     private static boolean checkIfPalindrome() {
