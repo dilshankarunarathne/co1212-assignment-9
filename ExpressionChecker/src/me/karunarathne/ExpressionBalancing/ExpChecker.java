@@ -19,14 +19,15 @@ public class ExpChecker {
     private static boolean isBalanced () {
         for (char c: expression.toCharArray()) {
             if (expression.isEmpty()) return false;
-//            if (isAnOpeningBracket(c)) {
-//                queue.enqueue(c);
-//            } else if (isAClosingBracket(c)) {
-//                if (isEmpty()) return false;
-//
-//            }
+            if (isAnOpeningBracket(c)) {
+                queue.enqueue(c);
+            } else if (isAClosingBracket(c)) {
+                if (isEmpty()) return false;
+
+            }
 
         }
+        return true;
     }
 
     private static boolean checkIfPalindrome() {
