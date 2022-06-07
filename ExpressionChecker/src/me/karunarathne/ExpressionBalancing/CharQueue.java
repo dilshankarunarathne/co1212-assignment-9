@@ -41,7 +41,9 @@ public class CharQueue {
     }
 
     public void clear() {
-        
+        size = 0;
+        firstNode = null;
+        lastNode = null;
     }
 
     public boolean isEmpty() {
