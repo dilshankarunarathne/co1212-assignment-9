@@ -22,10 +22,12 @@ public class ExpChecker {
             if (isAnOpeningBracket(c)) {
                 queue.enqueue(c);
             } else if (isAClosingBracket(c)) {
-
+                if isEmpty() return false;
             }
         }
     }
+
+    
 
     private static boolean isAClosingBracket (char c) {
         return c == ')' || c == '}' || c == ']';
