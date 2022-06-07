@@ -25,9 +25,12 @@ public class ExpChecker {
                 if (isEmpty()) return false;
                 queue.enqueue(c);
             }
-
         }
-        return true;
+        return isTheQueueAPalindrome();
+    }
+
+    private static boolean isTheQueueAPalindrome()  {
+        
     }
 
     private static boolean checkIfPalindrome() {
