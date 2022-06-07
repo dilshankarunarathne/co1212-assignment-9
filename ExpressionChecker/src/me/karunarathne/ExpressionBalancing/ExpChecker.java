@@ -31,12 +31,12 @@ public class ExpChecker {
 
     private static boolean isTheQueueAPalindrome()  {
         if (count % 2 == 1) return false;
-        String reverseHalf = "";
+        String half = "";
         for (int i=0; i<count/2; i++) {
-            reverseHalf = queue.dequeue() + reverseHalf;
+            half = queue.dequeue() + half;
         }
         for (int i=0; i<count/2; i++) {
-            if (compatibleBrackets(reverseHalf.charAt(i), queue.dequeue())) {
+            if (compatibleBrackets(half.charAt(i), queue.dequeue())) {
                 return false;
             }
         }
