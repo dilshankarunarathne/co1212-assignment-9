@@ -18,3 +18,4 @@ Implement a java program using queue to check if an expression is balanced or no
   * For the rest of the traverse:
     * Check whether each element (should be a closing bracket) of the queue matches the corresponding opening bracket from the character at i<sup>th</sup> place in half
 
+![OutputSS](https://github.com/dilshankarunarathne/co1212-assignment-9/raw/main/static/OutputSS.png "OutputSS")
