@@ -18,8 +18,9 @@ public class ExpChecker {
 
     private static boolean isBalanced () {
         for (char c: expression.toCharArray()) {
+            if (expression.isEmpty()) return false;
             if (isAnOpeningBracket(c)) {
-
+                queue.enqueue(c);
             }
         }
     }
