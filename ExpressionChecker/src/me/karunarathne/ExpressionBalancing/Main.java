@@ -20,8 +20,8 @@ public class Main {
     private static void checkExp(String expression) {
         System.out.println(
                 expression + " is" + (
-                    (ExpChecker.checkBalance(expression)) ? (" ") : (" not "))
-                + "balanced!"
+                    (ExpChecker.checkBalance(expression)) ? (" ") : (" not ")
+		) + "balanced!"
         );
     }
 }
