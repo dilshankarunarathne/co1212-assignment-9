@@ -40,6 +40,10 @@ public class CharQueue {
         size ++ ;
     }
 
+    public boolean isEmpty() {
+        return size == 0;
+    }
+
     private static class Node {
         char data;
         Node next;
